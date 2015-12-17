@@ -1,0 +1,14 @@
+{
+  "name": "PatientProject",
+  "version": "0.0.0",
+  "description": "PatientProject",
+  "main": "app.js",
+  "author": {
+    "name": "mnoursi",
+    "email": ""
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  }
+}
