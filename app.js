@@ -3,7 +3,7 @@ var express = require("express");
 var app = express();
 
 var mongoose = require("mongoose");
-mongoose.connect('mongodb://127.0.0.1/gsms');
+mongoose.connect('mongodb://' + process.env.IP +'/gsms');
 
 var bodyparser = require("body-parser");
 
@@ -17,6 +17,6 @@ var api = require("./api");
 app.use("/api", api);
 
 
-app.listen(3333, function () {
+app.listen(process.env.PORT,  process.env.IP, function () {
     console.log("started");
 });
